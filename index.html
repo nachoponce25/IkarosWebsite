@@ -53,22 +53,7 @@
             background-position: center center;
             filter: brightness(60%);
         }
-        @media screen and (max-width: 800px)
-        {
-            .hero::before
-            {
-                background: url(Content/Images/space1080.png);
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                max-width: 100%;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-                filter: brightness(60%);
-            }
-        }
+        
         .hero-content
         {
             position: relative;
@@ -81,6 +66,28 @@
             top: -50px;
             width: 500px;
             height: 500px;
+        }
+        @media screen and (max-width: 800px)
+        {
+            .hero::before
+            {
+                background: url(Content/Images/space1080.png);
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: top center;
+                filter: brightness(60%);
+            }
+            .hero-logo
+            {
+                position: relative;
+                top: 0px;
+                width: 150px;
+                height: 150px;
+            }
         }
     </style>
 

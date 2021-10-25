@@ -1,0 +1,298 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ikaros Band - Home</title>
+    <meta name="Ikaros Band" content="WebSite for the Metal band Ikaros">
+    <meta name="Ikaros inc." content="SitePoint">
+
+    <meta property="og:title" content="A Basic HTML5 Template">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+    <meta property="og:description" content="A simple HTML5 Template for new projects.">
+    <meta property="og:image" content="image.png">
+
+    <link rel="icon" href="Content/Logos/ikaros_logo.png">
+    <link rel="icon" href="Content/Logos/ikaros_logo.png" type="image/png">
+    <!--<link rel="apple-touch-icon" href="/apple-touch-icon.png">-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+        .cardsText
+        {
+            font-family: 'Exo 2', sans-serif;
+        }
+        body
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .hero
+        {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        .hero-content
+        {
+            position: relative;
+            width: 20px;
+            height: 20px;
+        }
+        .hero-logo
+        {
+            position: relative;
+            top: -50px;
+            width: 500px;
+            height: 500px;
+        }
+
+        /*Image sizes should be smaller because of the screen width of the devices*/
+        @media screen and (max-width: 2200px)
+        {
+            .spaceBack
+            {
+                background-image: 
+                    linear-gradient(180deg, #ffffff00, #000000),
+                    url(Content/Images/space1080.png);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top left;
+                
+            }
+            .ikaros-home-logo
+            {
+                position: relative;
+                top: -10px;
+                width: 400px;
+                height: 400px;
+            }
+        }
+        
+        @media screen and (max-width: 1100px)
+        {
+            .spaceBack
+            {
+                background: linear-gradient(180deg, #ffffff00, #000000),
+                    url(Content/Images/space1080.png);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top left;
+            }
+            .ikaros-home-logo
+            {
+                position: relative;
+                top: -10px;
+                width: 300px;
+                height:300px;
+            }
+        }
+        @media screen and (max-width: 800px)
+        {
+            .spaceBack
+            {
+                background: linear-gradient(180deg, #ffffff00, #000000),
+                    url(Content/Images/space768.png);
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top left;
+            }
+            .ikaros-home-logo
+            {
+                position: relative;
+                top: -10px;
+                width: 220px;
+                height:220px;
+            }
+        }
+        
+
+        
+    </style>
+
+</head>
+
+<body style="background-color: #000000;">
+  
+    <div class="spaceBack">
+    <nav class="navbar navbar-expand-lg navbar-dark p-0 position-relative flex-shrink-0" style="background: linear-gradient(90deg, rgb(65, 110, 150), rgb(11, 21, 29));">
+        <div class="container-fluid">
+        
+            <a class="navbar-brand mx-3" href="index.html">
+                <img src="Content/Logos/ikaros_logo.png" style="width: 50px; height: 50px;" alt="Ikaros">
+            </a>
+
+            <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#MainMenu"
+                aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="MainMenu">
+                <ul class="nav navbar-nav me-auto">
+                    <li class="nav-item px-2"><a class="nav-link dropdown-item" style="background:none;" href="band.html">Band</a></li>
+                    <!--For this section use the stupidest images you can find-->
+                    <li class="nav-item px-2"><a class="nav-link dropdown-item" style="background:none;"href="https://tinyurl.com/36muzyxw">About</a></li>
+                    <li class="nav-item px-2"><a class="nav-link dropdown-item" style="background:none;"href="https://tinyurl.com/36muzyxw">Music</a></li>
+                    <li class="nav-item px-2"><a class="nav-link dropdown-item" style="background:none;"href="https://tinyurl.com/36muzyxw">Videos</a></li>
+                    <li class="nav-item px-2"><a class="nav-link dropdown-item" style="background:none;"href="pictures.html">Pictures</a></li>
+                    <li class="nav-item px-2"><a class="nav-link dropdown-item" style="background:none;"href="https://tinyurl.com/36muzyxw">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse " id="SocialLinks">
+                <ul class="nav navbar-nav ms-auto">
+                    <li class="nav-link active mx-1 my-auto">
+                        <a class="nav-link" href="https://www.youtube.com/watch?v=QMqgJUcu3JA">
+                            <img src="Content/Logos/facebook.png" style="width: 11px; height: 20px;" alt="YoutTube">
+                        </a>
+                    </li>
+                    <li class="nav-link active mx-1 my-auto">
+                        <a class="nav-link" href="https://www.youtube.com/watch?v=QMqgJUcu3JA">
+                            <img src="Content/Logos/twitter.png" style="width: 24px; height: 20px;" alt="YoutTube">
+                        </a>
+                    </li>
+                    <li class="nav-item active mx-1 my-auto">
+                        <a class="nav-link" href="https://www.instagram.com/ikaros.arg/">
+                            <img src="Content/Logos/instagram.png" style="width: 20px; height: 20px;" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="nav-link active mx-1 pe-1 my-auto">
+                        <a class="nav-link" href="https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT?si=b8cc59ec2b7349e7">
+                            <img src="Content/Logos/spotify.png" style="width: 20px; height: 20px;" alt="Spotify">
+                        </a>
+                    </li>
+                    <li class="nav-link active mx-1 px-0 my-auto">
+                        <a class="nav-link" href="https://www.youtube.com/watch?v=QMqgJUcu3JA">
+                            <img src="Content/Logos/youtube.png" style="width: 25px; height: 20px;" alt="YoutTube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <img class="ikaros-home-logo px-0" src="Content/Logos/ikaros_logo.png" alt="IkarosLogo">
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container cardsText">
+
+        <div class="row d-flex justify-content-around">
+            <div class="col-md-3 card p-0 my-3" style="background-color: rgb(65, 110, 150);">
+                <img src="Content/Images/band/nachos.jpg" class="card-img-top">
+                <div class="container d-flex justify-content-center px-3">
+                    <a class="card-body text-white d-flex justify-content-center mx-5 px-0 py-1 link" href="https://www.instagram.com/sr_yeti/" style="font-size: 25px;">
+                        Ignacio Salaverri
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3 card p-0 my-3" style="background-color: rgb(65, 110, 150);">
+                <img src="Content/Images/band/nachop.jpg" class="card-img-top" alt="Guitarist">
+                <div class="container d-flex justify-content-center px-4">
+                    <a class="card-body text-white d-flex justify-content-center mx-5 px-0 py-1 link" href="https://www.instagram.com/nacho_ponce25/" style="font-size: 25px;">
+                        Ignacio Ponce
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row d-flex justify-content-around">
+            <div class="col-md-3 card p-0 my-3" style="background-color: rgb(65, 110, 150);">
+                <img src="Content/Images/band/fede.jpg" class="card-img-top" alt="Guitarist">
+                <div class="container d-flex justify-content-center px-4">
+                    <a class="card-body text-white d-flex justify-content-center mx-5 px-0 py-1 link" href="https://www.instagram.com/ramosfedeivan81/" style="font-size: 25px;">
+                        Federico Ramos
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3 card p-0 my-3" style="background-color: rgb(65, 110, 150);">
+                <img src="Content/Images/band/daveh.jpeg" class="card-img-top pt-4" alt="Bassist">
+                <div class="container d-flex justify-content-center px-4">
+                    <a class="card-body text-white d-flex justify-content-center mx-5 px-0 align-items-baseline pt-3 pb-1 link" href="https://www.instagram.com/david.prosperi/" style="font-size: 25px;">
+                        David Prosperi
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid flex-shrink-0 mx-0 px-0">
+        <footer class="p-2" style="background: linear-gradient(0deg, rgb(15, 33, 48), #000000);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md d-flex justify-content-center align-items-center">
+                        <a class="nav-link" style="color: rgb(121, 121, 121);"
+                            href="https://tinyurl.com/36muzyxw">
+                            Help
+                        </a>
+                    </div>
+                    <div class="col-md d-flex justify-content-center align-items-center">
+                        <a class="nav-link" style="color: rgb(121, 121, 121);"
+                            href="https://tinyurl.com/36muzyxw">
+                            Credits
+                        </a>
+                    </div>
+                    <div class="col-md d-flex justify-content-center align-items-center">
+                        <a class="nav-link" style="color: rgb(121, 121, 121);"
+                            href="https://tinyurl.com/36muzyxw">
+                            Terms of Use
+                        </a>
+                    </div>
+                    <div class="col-md d-flex justify-content-center align-items-center">
+                        <a class="nav-link" style="color: rgb(121, 121, 121);"
+                            href="https://tinyurl.com/36muzyxw">
+                            Privacy Policy
+                        </a>
+                    </div>
+                    <div class="col-md d-flex justify-content-center align-items-center">
+                        <a style="color: rgb(121, 121, 121);">
+                            &#169 Ikaros
+                        </a>
+                    </div>
+                    <div class="col-md d-flex justify-content-center align-items-center">
+                        <a class="nav-link" style="color: rgb(121, 121, 121);"
+                            href="https://www.havocstudios.com">
+                            &#169 Havoc Studios
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    </div>
+</body>
+</html>
